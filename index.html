@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Nosso Álbum ♥</title>
+<link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;600;700&family=Playfair+Display:ital,wght@0,400;1,400;1,600&family=Lato:wght@300;400&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+ 
+<!-- TITLE SCREEN -->
+<div id="title-screen">
+  <h1>Nosso Álbum<br>de Memórias ♥</h1>
+  <p>25 páginas de amor, saudade e sorrisos</p>
+  <button id="start-btn" onclick="startAlbum()">Abrir Álbum</button>
+</div>
+ 
+<!-- BOOK -->
+<div id="book-wrap"></div>
+<div id="progress-bar"><div id="progress-fill"></div></div>
+ 
+<div id="nav">
+  <button class="nav-btn" id="prev-btn" onclick="changePage(-1)" disabled>&#8592;</button>
+  <span id="counter">1 / 25</span>
+  <button class="nav-btn" id="next-btn" onclick="changePage(1)">&#8594;</button>
+</div>
+ 
+<script src="script.js"></script>
+</body>
+</html>
+ 
